@@ -1,6 +1,17 @@
 apply plugin: 'java'
-
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
 task "create-dirs" << {
-   sourceSets*.java.srcDirs*.each { it.mkdirs() }
-   sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+    sourceSets*.java.srcDirs*.each { it.mkdirs() }
+    sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+}
+
+dependencies {
+    compile(
+            ['net.jcip:jcip-annotations:1.0'],
+            ['org.testng:testng:6.8']
+    )
+
 }
