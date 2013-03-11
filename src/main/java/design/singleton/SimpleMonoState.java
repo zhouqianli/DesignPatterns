@@ -1,5 +1,8 @@
 package design.singleton;
 
+import net.jcip.annotations.NotThreadSafe;
+
+@NotThreadSafe
 public class SimpleMonoState {
     private static String data;
 

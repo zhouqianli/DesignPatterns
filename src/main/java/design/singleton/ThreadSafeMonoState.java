@@ -1,5 +1,8 @@
 package design.singleton;
 
+import net.jcip.annotations.ThreadSafe;
+
+@ThreadSafe
 public class ThreadSafeMonoState {
     private volatile static String data;
 
