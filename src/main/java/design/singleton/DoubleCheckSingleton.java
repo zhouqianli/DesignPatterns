@@ -9,7 +9,7 @@ public final class DoubleCheckSingleton {
     private DoubleCheckSingleton() {
     }
 
-    public DoubleCheckSingleton Instance() {
+    public DoubleCheckSingleton getInstance() {
         if (instance == null)
             synchronized (DoubleCheckSingleton.class) {
                 if (instance == null)

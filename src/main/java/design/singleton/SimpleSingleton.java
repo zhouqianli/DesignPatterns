@@ -11,7 +11,7 @@ public final class SimpleSingleton {
 
     private SimpleSingleton instance;
 
-    public SimpleSingleton Instance() {
+    public SimpleSingleton getInstance() {
         if (instance == null)
             instance = new SimpleSingleton();
         return instance;
