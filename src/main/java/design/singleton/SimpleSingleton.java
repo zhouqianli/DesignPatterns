@@ -1,9 +1,9 @@
 package design.singleton;
 
 
-import net.jcip.annotations.ThreadSafe;
+import net.jcip.annotations.NotThreadSafe;
 
-@ThreadSafe
+@NotThreadSafe
 public final class SimpleSingleton {
 
     private SimpleSingleton() {
