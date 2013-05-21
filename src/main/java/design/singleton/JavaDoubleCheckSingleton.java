@@ -12,7 +12,7 @@ public class JavaDoubleCheckSingleton {
     private JavaDoubleCheckSingleton() {
     }
 
-    public synchronized JavaDoubleCheckSingleton Instance() {
+    public synchronized JavaDoubleCheckSingleton getInstance() {
         if (instance == null)
             instance = new JavaDoubleCheckSingleton();
         return instance;
